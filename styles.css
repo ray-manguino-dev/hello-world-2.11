@@ -1,0 +1,130 @@
+/* Hello World 2.11 — Warm, Welcoming Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 50%, #ffd6ba 100%);
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: #5a3e2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: #fffdf9;
+    border-radius: 24px;
+    padding: 48px 56px;
+    max-width: 480px;
+    width: 90%;
+    box-shadow:
+        0 4px 24px rgba(180, 100, 50, 0.12),
+        0 1px 3px rgba(180, 100, 50, 0.08);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #d4530a;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #b07040;
+    margin: 0 0 36px 0;
+}
+
+#name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7a5a3a;
+    display: block;
+    text-align: left;
+}
+
+#name-input {
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    border: 2px solid #f0c8a0;
+    border-radius: 14px;
+    background: #fffaf5;
+    color: #5a3e2b;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    width: 100%;
+}
+
+#name-input::placeholder {
+    color: #c8a888;
+}
+
+#name-input:focus {
+    border-color: #e07030;
+    box-shadow: 0 0 0 4px rgba(224, 112, 48, 0.15);
+}
+
+button[type="submit"] {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #e85d04 0%, #dc2f02 100%);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+    box-shadow: 0 4px 14px rgba(220, 47, 2, 0.3);
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 47, 2, 0.35);
+    filter: brightness(1.05);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(220, 47, 2, 0.25);
+}
+
+#welcome-message {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #c04000;
+    background: linear-gradient(135deg, #fff3e6 0%, #ffe0cc 100%);
+    padding: 20px 24px;
+    border-radius: 16px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    animation: fadeIn 0.4s ease-out;
+    border: 1px solid #f0c8a0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
